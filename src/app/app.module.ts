@@ -1,3 +1,4 @@
+import { AuthorService } from './author.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +13,9 @@ import { AuthorComponent } from './author/author.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    AuthorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
