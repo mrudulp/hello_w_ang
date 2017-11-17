@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AuthorComponent } from './author/author.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { CapStartPipe } from './capstart.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    CapStartPipe
   ],
   imports: [
     BrowserModule

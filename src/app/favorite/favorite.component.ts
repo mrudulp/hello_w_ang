@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FavoriteComponent implements OnInit {
 
   isActive = false;
+  // longtext = "the Blah blh blash blashhhh the of the world"
+  longtext = ""
 
   constructor() { }
 
@@ -17,5 +19,10 @@ export class FavoriteComponent implements OnInit {
   toggleMe() {
     console.log(' Toggle clicked');
     this.isActive = !this.isActive
+  }
+
+  keyboardPressed(word:string){
+    // console.log("keyboard pressed::"+word)
+    this.longtext = word
   }
 }

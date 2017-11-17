@@ -1,3 +1,7 @@
 <button type="button" class="btn btn-link btn-outline-light" (click)="toggleMe()">
   <span class="glyphicon" [class.glyphicon-star] ="isActive" [class.glyphicon-star-empty] ="!isActive"></span>
 </button>
+<div>
+<input type="text" #word (keydown)="keyboardPressed(word.value)">
+{{longtext|capstart}}
+</div>
