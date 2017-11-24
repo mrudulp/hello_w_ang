@@ -6,3 +6,18 @@
   <app-author></app-author>
   <app-favorite></app-favorite>
   <like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked"></like>
+  <div class="nav nav-pills">
+    <li [class.active]="viewmode == 'map'"><a (click)="viewmode = 'map'">MapView</a></li>
+    <li [class.active]="viewmode == 'list'"><a (click)="viewmode = 'list'">ListView</a></li>
+  </div>
+  <div [ngSwitch]="viewmode">
+    <div *ngSwitchCase="'map'">Map View content</div>
+    <div *ngSwitchCase="'list'">List View content</div>
+  </div>
+
+  <zippy title="Shipping Details">
+    Shipping Details Content
+  </zippy>
+  <zippy title="Billing Details">
+    Billing Details Content
+  </zippy>

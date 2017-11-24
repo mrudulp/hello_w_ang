@@ -8,6 +8,7 @@ import { AuthorComponent } from './author/author.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { CapStartPipe } from './capstart.pipe';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LikeComponent } from './like/like.component';
     AuthorComponent,
     FavoriteComponent,
     CapStartPipe,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

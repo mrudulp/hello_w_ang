@@ -12,4 +12,5 @@ export class AppComponent {
     isLiked:false,
     likesCount:10
   }
+  viewmode = 'map'
 }
