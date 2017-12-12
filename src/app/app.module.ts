@@ -1,6 +1,6 @@
 import { AuthorService } from './author.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -9,6 +9,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { CapStartPipe } from './capstart.pipe';
 import { LikeComponent } from './like/like.component';
 import { ZippyComponent } from './zippy/zippy.component';
+import { CourseformComponent } from './courseform/courseform.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,14 @@ import { ZippyComponent } from './zippy/zippy.component';
     FavoriteComponent,
     CapStartPipe,
     LikeComponent,
-    ZippyComponent
+    ZippyComponent,
+    CourseformComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthorService
